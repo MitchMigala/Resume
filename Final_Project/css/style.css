@@ -1,0 +1,54 @@
+
+body{
+    background-image: url("../imgs/ryan-ancill.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foot{
+    width: 100vw;
+    margin-top: 5vh;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.invis{
+    display: none;
+}
+
+table td:hover{
+    background-color: #d4cdcd;
+    /*color: #FFFFFF;*/
+
+
+}
+.tDate{
+    font-size: .5 em;
+}
+.trans{
+    background-color: rgba(0, 0,0, 0.3);
+}
+.headText{
+    color: #FFFFFF;
+}
+.arrows{
+    font-size: 6em;
+    margin-top:10vh;
+    width:1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d8d2d2;
+
+}
+
+.arrows:hover{
+    color: #FFFFFF;
+}
+
+.card{
+    margin-top:10vh;
+    width:50vw;
+    text-align: center;
+}
+
