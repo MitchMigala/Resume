@@ -1,6 +1,6 @@
 
 body{
-    background-image: url("../imgs/ryan-ancill.jpg");
+    background-image: url("../imgs/ryan-ancill2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -12,6 +12,7 @@ body{
     color: #FFFFFF;
 
 }
+
 .invis{
     display: none;
 }
@@ -30,6 +31,9 @@ table td:hover{
 }
 .headText{
     color: #FFFFFF;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 0.85em;
 }
 .arrows{
     font-size: 6em;
@@ -38,17 +42,123 @@ table td:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #d8d2d2;
+    color: #FFFFFF;
 
 }
 
 .arrows:hover{
-    color: #FFFFFF;
+    color: #d8d2d2;
 }
 
 .card{
     margin-top:10vh;
-    width:50vw;
     text-align: center;
+
+
+    
 }
 
+.transOut{
+    margin-top:10vh;
+    width:50vw;
+    text-align: center;
+    min-height: 60vh;
+    transition: height 3s ease-out;
+
+}
+.transIn{
+    margin-top:10vh;
+    width:50vw;
+    text-align: center;
+    min-height: 60vh;
+    transition-delay: 3s;
+    transition: height 3s ease-in;
+
+}
+
+.card:active{
+    height: 0px;
+}
+
+li{
+    width:100%;
+}
+
+li:hover{
+    border-color: #c5bebe;
+}
+
+.smNext{
+    display: none;
+}
+.smCopy{
+    display:none;
+}
+
+@media screen and (max-width: 992px){
+    .card{
+        font-size: .85em;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .card{
+        font-size: .75em;
+    }
+
+    .headText{
+        font-size: 50%;
+    }
+
+    .arrows{
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    li{
+        font-size: .5em;
+    }
+
+    .card-footer{
+        font-size: .5em;
+    }
+
+    .card-title{
+        font-size: .5em;
+    }
+
+    .card-text{
+        font-size: .5em;
+    }
+    .arrows{
+        display:none;
+    }
+    .smNext{
+        display: block;
+    }
+
+    header{
+        display:none;
+    }
+    footer{
+        display:none;
+    }
+
+    .card{
+        width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
+        max-width: 100vw;
+        flex: 100%;
+        margin-top: 0 ;
+    }
+
+    .smCopy{
+        display: block;
+    }
+
+
+
+}

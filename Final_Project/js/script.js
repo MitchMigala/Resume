@@ -1,4 +1,4 @@
-var allIds = ["card1", "card2", "card3", "card4"] ;
+var allIds = ["card1", "card2", "card3", "card4", "card5"] ;
 var place = "" ;
 var count = 0;
 
@@ -12,7 +12,7 @@ function flipCard(direction){
         document.getElementById("card1").className = "invis";
 
         //move our pointer to the end of the array
-        count = 3;
+        count = 4;
         //make the last card visible
         document.getElementById(allIds[count]).classList.remove("invis");
 
@@ -22,10 +22,10 @@ function flipCard(direction){
     }
 
     //we are at the end and swing back to beginning.
-    if(direction == "right" && count == 3){
+    if(direction == "right" && count == 4){
 
-        //make card4 invisible
-        document.getElementById("card4").className = "invis" ;
+        //make card5 invisible
+        document.getElementById("card5").className = "invis" ;
 
         //move our pointer to the beginning of the array
         count = 0;
@@ -56,7 +56,7 @@ function flipCard(direction){
 
     }
 
-    // mostly the same logic
+    // mostly the same logic as above double check direction fist
     if(direction == "left"){
         //make the current card invisible
         document.getElementById(allIds[count]).className = "invis" ;
@@ -82,4 +82,5 @@ function pageInit(){
     document.getElementById('card2').className = "invis";
     document.getElementById('card3').className = "invis";
     document.getElementById('card4').className = "invis";
+    document.getElementById('card5').className = "invis";
 }
