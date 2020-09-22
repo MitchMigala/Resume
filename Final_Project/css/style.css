@@ -10,7 +10,6 @@ body{
     margin-top: 5vh;
     text-align: center;
     color: #FFFFFF;
-
 }
 
 .invis{
@@ -20,15 +19,16 @@ body{
 table td:hover{
     background-color: #d4cdcd;
     /*color: #FFFFFF;*/
-
-
 }
+
 .tDate{
     font-size: .5 em;
 }
+
 .trans{
     background-color: rgba(0, 0,0, 0.3);
 }
+
 .headText{
     color: #FFFFFF;
     margin-top: 1vh;
@@ -43,7 +43,6 @@ table td:hover{
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
-
 }
 
 .arrows:hover{
@@ -53,27 +52,6 @@ table td:hover{
 .card{
     margin-top:10vh;
     text-align: center;
-
-
-    
-}
-
-.transOut{
-    margin-top:10vh;
-    width:50vw;
-    text-align: center;
-    min-height: 60vh;
-    transition: height 3s ease-out;
-
-}
-.transIn{
-    margin-top:10vh;
-    width:50vw;
-    text-align: center;
-    min-height: 60vh;
-    transition-delay: 3s;
-    transition: height 3s ease-in;
-
 }
 
 .card:active{
@@ -95,13 +73,14 @@ li:hover{
     display:none;
 }
 
-@media screen and (max-width: 992px){
+/*
+@media only screen and (min-width: 992px){
     .card{
         font-size: .85em;
     }
 }
 
-@media screen and (max-width: 767px){
+@media only screen and (min-width: 767px){
     .card{
         font-size: .75em;
     }
@@ -114,24 +93,32 @@ li:hover{
         font-size: 3em;
     }
 }
+*/
+@media only screen and (min-width: 500px) and (max-device-width: 1000px){
 
-@media screen and (max-width: 450px){
 
-    li{
-        font-size: .5em;
+    html{
+        margin:0;
+        padding:0;
+    }
+    body{
+        margin:0;
+        padding: 0;
+
     }
 
-    .card-footer{
-        font-size: .5em;
+    .card-body{
+        margin:0;
+        padding:0;
+          }
+
+    .container{
+        margin:0;
+        padding:0;
     }
 
-    .card-title{
-        font-size: .5em;
-    }
 
-    .card-text{
-        font-size: .5em;
-    }
+
     .arrows{
         display:none;
     }
@@ -147,18 +134,77 @@ li:hover{
     }
 
     .card{
-        width: 100vw;
-        height: 100vh;
+        font-size: 2.5em;
+
         min-height: 100vh;
-        max-width: 100vw;
-        flex: 100%;
+        min-width: 100vw;
         margin-top: 0 ;
+        margin: 0;
+        padding-right: 0;
+    }
+
+    h5{
+        font-size: 1.5em;
     }
 
     .smCopy{
         display: block;
     }
 
+}
 
+@media only screen and (max-width: 500px){
+
+
+    html{
+        margin:0;
+        padding:0;
+    }
+    body{
+        margin:0;
+        padding: 0;
+
+    }
+
+    .container{
+        margin:0;
+        padding:0;
+    }
+    .card-body{
+  margin:0;
+  padding:0;
+    }
+
+
+
+    .arrows{
+        display:none;
+    }
+    .smNext{
+        display: block;
+    }
+
+    header{
+        display:none;
+    }
+    footer{
+        display:none;
+    }
+
+    .card{
+        font-size: .5em;
+
+        min-height: 100vh;
+        min-width: 100%;
+
+        margin-top: 0 ;
+        margin: 0;
+        padding:0;
+    }
+
+
+    .smCopy{
+        display: block;
+    }
 
 }
